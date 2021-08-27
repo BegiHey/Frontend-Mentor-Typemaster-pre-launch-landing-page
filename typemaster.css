@@ -1,0 +1,435 @@
+:root {
+    --bright-orange: #f16718;
+    --shaded-orange: #ff9b62;
+    --dark-blue: #162542;
+    --grey-blue: #7b8bad;
+    --grey: #e8eff2;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html, body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    vertical-align: baseline;
+}
+
+/* Header */
+header {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.2rem;
+}
+
+.order {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    background-color: var(--grey);
+    color: var(--dark-blue);
+    text-align: center;
+    padding: 0.8rem 1rem 0.8rem 1rem;
+    border-radius: 0.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.6rem;
+    transition: 300ms ease-in-out;
+}
+
+.order:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+
+/* Hero Section */
+
+.container {
+    margin: 0 auto;
+    padding:  1.2rem;
+}
+
+.hero-title {
+    font-size: 12vw;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    line-height: 3rem;
+}
+
+.hero-information {
+    color: var(--grey-blue);
+    margin-top: 1rem;
+    line-height: 1.625rem;
+}
+
+.order-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.hero-pre-order {
+    width: 9.6rem;
+    height: 3rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    background-color: var(--bright-orange);
+    font-weight: 700;
+    color: var(--white);
+    line-height: 1.625rem;
+    transition: 300ms ease-in-out;
+}
+
+.hero-pre-order:hover {
+    background-color: var(--shaded-orange);
+    color: var(--white);
+}
+
+.hero-release {
+    align-self: center;
+    margin-right: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--grey-blue);
+}
+
+.img-main-keyboard {
+    background-image: url(./assets/mobile/image-keyboard.jpg);
+    background-size: cover;
+    margin: 4.4rem 0 0 0rem;
+    height: 88vw;
+    width: 100%;
+    border-radius: 1.25em 0 0 1.25em;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transform: translateX(1.5rem);
+}
+
+.container-info {
+    padding-top: 1.2rem;
+    display: grid;
+    grid-template-columns: 34% auto;
+    gap: 4.5rem 1.5rem;
+}
+
+.overlay-img {
+    background-image: url("./assets/mobile/image-phone-and-keyboard.jpg");
+    background-size: cover;
+    background-color: var(--bright-orange);
+    background-blend-mode: multiply;
+    height: 51vw;
+    border-radius: 1.25em;
+    transform: translateX(-1.5rem);
+}
+
+.glass-img {
+    background-image: url("./assets/mobile/image-glass-and-keyboard.jpg");
+    background-size: cover;
+    height: 51vw;
+    border-radius: 1.25em;
+    transform: translateX(-1.5rem);
+}
+
+.sub-title {
+    color: var(--dark-blue);
+    position: relative;
+    top: 30%;
+    grid-column: span 2;
+    margin: auto 3rem;
+    font-weight: 900;
+    line-height: 2.25rem;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sub-info {
+    grid-column: span 2;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0 1.5rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: var(--grey-blue);
+}
+
+.descriptions {
+    margin: 5rem auto;
+    padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+}
+
+.description-icon {
+    width: 4.3rem;
+    height: 4.3rem;
+    background: var(--bright-orange);
+    border-radius: 1rem;
+    margin: 0 auto 3rem;
+    display: grid;
+    place-items: center;
+}
+
+.description {
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    padding: 0 4rem;
+    line-height: 1.75rem;
+    color: var(--dark-blue);
+}
+
+.details {
+    color: var(--grey-blue);
+    text-align: center;
+    line-height: 1.7rem;
+    margin-bottom: 4rem;
+}
+
+footer {
+    padding: 1.2rem 1.2rem 2rem 1.2rem;
+    text-align: center;
+    color: var(--grey-blue);
+    display: block;
+}
+
+.footer-info {
+    font-weight: 600;
+}
+
+span {
+    font-weight: 400;
+}
+
+@media screen and (min-width: 768px) {
+    
+    header {
+        padding: rem;
+    }
+
+    .container {
+        padding-left: 3rem;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+    .hero-info {
+        padding: 2rem 1.5rem 0rem 0rem;
+    }
+
+    .hero-information {
+        padding: 0px;
+        text-align: left;
+        width: 45vw;
+    }
+
+    .hero-title {
+        padding-top: 2rem;
+        font-size: 3rem;
+        text-align: left;
+        width: 40vw;
+    }
+
+    .hero-pre-order {
+        width: 10.2rem;
+        height: 3.5rem;
+    }
+
+    .img-main-keyboard {
+        background-image: url(./assets/tablet/image-keyboard.jpg);
+        margin-top: 1rem;
+        height: 55vw;
+        width: 42vw;
+        left: 55vw;
+    }
+
+    .container-info {
+        padding: 2rem 5rem 4rem 4rem;
+    }
+
+    .overlay-img {
+        background-image: url(./assets/tablet/image-phone-and-keyboard.jpg);
+        height: 41vw;
+    }
+
+    .glass-img {
+        transform: none;
+        background-image: url(./assets/tablet/image-glass-and-keyboard.jpg);
+        height: 41vw;
+    }
+
+    .sub-title {
+        grid-column: span 1;
+        margin: 0 1.5rem 0 0;
+        text-align: left;
+    }
+
+    .sub-info {
+        grid-column: span 1;
+        padding-top: 1rem;
+        margin: 2.45rem 0 0 2.25rem;
+        text-align: left;
+        width: 26rem;
+    }
+
+    .descriptions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4.5rem;
+        margin: 0 2.5rem 8rem;
+    }
+
+    .description-icon {
+        margin: 0 0 3rem 0;
+    }
+
+    .description {
+        text-align: left;
+        padding: unset;
+        max-width: 12.5rem;
+    }
+
+    .details {
+        text-align: left;
+        margin-bottom: 0;
+        max-width: 17.5rem;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    
+    header {
+        padding: 3.5rem 9.5rem;
+    }
+
+    .container {
+        padding: 0 0.5rem 0 4rem;
+        margin: 0 5rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+
+    .hero-title {
+        font-size: 3.5rem;
+        line-height: 3.5rem;
+    }
+
+    .hero-information {
+        font-size: 1.2rem;
+        margin-right: 2rem;
+        width: 37vw;
+    }
+
+    .img-main-keyboard {
+        height: 33.5vw;
+        transform: translateX(0);
+        background-image: url(./assets/desktop/image-keyboard.jpg);
+        border-radius: 1.25em;
+        width: 89%;
+    }
+    
+    .container-info {
+        padding-left: 10rem;
+        grid-template-columns: 25% 40% auto;
+        gap: 2rem 2rem;
+    }
+
+    .overlay-img {
+        background-image: url(./assets/desktop/image-phone-and-keyboard.jpg);
+        height: 33.2vw;
+        grid-row: span 2;
+    }
+
+    .glass-img {
+        background-image: url(./assets/desktop/image-glass-and-keyboard.jpg);
+        height: 33.2vw;
+        grid-row: span 2;
+    }
+
+    .sub-title {
+        align-self: end;
+        max-width: 2rem;
+        margin: 0 0 0 2rem;
+    }
+
+    .sub-info {
+        font-size: 0.8rem;
+        padding-top: 0rem;
+        margin: 3rem 0 0 2rem;
+        width: 12rem;
+    }
+
+    .descriptions {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 2rem;
+        font-size: 0.8rem;
+        margin: 15rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    header {
+        max-width: 1200px;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container::after {
+        content: '';
+        position: absolute;
+        height: 17%;
+        width: 12rem;
+        background-color: var(--grey);
+        border-radius: 1.25rem;
+        transform: translateX(73rem);
+        margin-top: 1rem;
+    }
+
+    .container-info {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container-info::after {
+        content: '';
+        position: absolute;
+        height: 17%;
+        width: 16rem;
+        background-color: var(--grey);
+        border-radius: 1.25rem;
+        transform: translateX(-19rem);
+        margin-top: 14.3rem;
+    }
+
+    .descriptions {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+}
